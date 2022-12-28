@@ -15,7 +15,7 @@
             "value": "Private"
         },
         "imageName": {
-            "value": "pythonacrapi.azurecr.io/nodeapp:Latest492773f7833d9d1882b6c477c775840deabd27e2"
+            "value": "pythonacrapi.azurecr.io/nodeapp:Latest$(Build.BuildId)"
         },
         "osType": {
             "value": "Linux"
