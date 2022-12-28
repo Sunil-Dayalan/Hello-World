@@ -20,6 +20,9 @@
         "tags": {
             "value": {}
         },
+        "adminUserEnabled": {
+            "value": "True"
+        },
         "publicNetworkAccess": {
             "value": "Enabled"
         }
