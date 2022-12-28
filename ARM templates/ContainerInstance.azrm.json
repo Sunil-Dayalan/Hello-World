@@ -80,7 +80,7 @@
               }
             ],
             "type": "Public",
-            "dnsNameLabel": "nodeapp"
+            "dnsNameLabel": "nodeapphw"
           },
           "osType": "Linux"
         }
