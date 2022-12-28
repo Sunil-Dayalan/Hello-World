@@ -17,7 +17,3 @@ COPY . .
 
 EXPOSE 8080
 CMD [ "node", "index.js" ]
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
