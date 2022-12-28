@@ -96,12 +96,6 @@
                                     }
                                 }
                             },
-                            "environmentVariables": [
-                                {
-                                    "name": "ENVIRONMENT_NAME",
-                                    "value": "[parameters('environmentVariable0')]"
-                                }
-                            ],
                             "ports": "[parameters('ports')]"
                         }
                     }

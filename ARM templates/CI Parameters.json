@@ -44,9 +44,6 @@
         "numberGpuCores": {
             "value": "1"
         },
-        "environmentVariable0": {
-            "value": "Staging"
-        },
         "ipAddressType": {
             "value": "Public"
         },
