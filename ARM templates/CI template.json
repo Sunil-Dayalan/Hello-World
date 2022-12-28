@@ -57,9 +57,6 @@
         "numberGpuCores": {
             "type": "string"
         },
-        "environmentVariable0": {
-            "type": "string"
-        },
         "ipAddressType": {
             "type": "string"
         },
