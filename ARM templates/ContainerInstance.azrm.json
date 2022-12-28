@@ -42,7 +42,7 @@
         "properties": {
           "containers": [
             {
-              "name": "nodeapp",
+              "name": "[variables('containerInstanceName')]",
               "properties": {
                 "image": "[parameters('image')]",
                 "ports": [
