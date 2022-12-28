@@ -20,9 +20,6 @@
         "tags": {
             "type": "object"
         },
-        "adminUserEnabled": {
-            "type": "bool"
-        },
         "publicNetworkAccess": {
             "type": "string"
         }
@@ -40,7 +37,6 @@
             "tags": "[parameters('tags')]",
             "properties": {
                 "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
-                "adminUserEnabled": true,
                 "zoneRedundancy": "[parameters('zoneRedundancy')]"
             }
         }
