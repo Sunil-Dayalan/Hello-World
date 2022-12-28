@@ -15,7 +15,7 @@
             "value": "Private"
         },
         "imageName": {
-            "value": "pythonacrapi.azurecr.io/nodeapp"
+            "value": "pythonacrapi.azurecr.io/nodeapp:Latest7e60de4b482a7291b5db16d854007bc3a6e2276a"
         },
         "osType": {
             "value": "Linux"
