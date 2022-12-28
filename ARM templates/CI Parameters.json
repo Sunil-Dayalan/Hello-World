@@ -24,7 +24,7 @@
             "value": "1"
         },
         "memory": {
-            "value": "1.5"
+            "value": "4"
         },
         "restartPolicy": {
             "value": "OnFailure"
