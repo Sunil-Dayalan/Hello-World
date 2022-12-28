@@ -38,9 +38,9 @@
             },
             "dependsOn": [],
             "tags": "[parameters('tags')]",
-            "adminUserEnabled": "[parameters('adminUserEnabled')]",
             "properties": {
                 "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
+                "adminUserEnabled": "[parameters('adminUserEnabled')]",
                 "zoneRedundancy": "[parameters('zoneRedundancy')]"
             }
         }
