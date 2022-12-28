@@ -49,6 +49,9 @@
                 }
             ]
         },
+        "env_ENVIRONMENT_NAME": {
+            "value": "Stage1"
+        },
         "dnsNameLabel": {
             "value": "nodeapp"
         },
