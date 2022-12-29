@@ -9,6 +9,10 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
+RUN groupadd veryhigh -g 1000000
+RUN useradd -r -u 1000000 -g veryhigh veryhigh
+RUN touch file-with-high-id
+RUN chown veryhigh:veryhigh file-with-high-id
 # If you are building your code for production
 # RUN npm ci --only=production
 
