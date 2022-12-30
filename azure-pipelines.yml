@@ -14,7 +14,7 @@ variables:
   imageRepository: 'nodejs'
   containerRegistry: 'pythonacrapi.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Nodejs/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: '$(Build.BuildId)''latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
