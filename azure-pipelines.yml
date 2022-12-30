@@ -37,38 +37,4 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
-- stage: Staging
-  dependsOn: 'Build'
-  displayName: WebApp Stage
-  jobs:
-  - job: 
-    pool:
-      vmImage: $(vmImageName)
-    steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'Hello App'
-        appType: 'webAppContainer'
-        WebAppName: 'nodejjs'
-        DockerNamespace: '$(containerRegistry)'
-        DockerRepository: '$(containerRegistry)/$(imageRepository)'
-        DockerImageTag: '$(tag)'
-- stage: Production
-  dependsOn: 'Staging'
-  displayName: WebApp Prod
-  jobs:
-  - job: 
-    pool:
-      vmImage: $(vmImageName)
-    steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'Hello App'
-        appType: 'webAppContainer'
-        WebAppName: 'nodejjs'
-        DockerNamespace: '$(containerRegistry)'
-        DockerRepository: '$(containerRegistry)/$(imageRepository)'
-        DockerImageTag: '$(tag)'
 
